@@ -1,1 +1,0 @@
-print("es um grande maluco")
