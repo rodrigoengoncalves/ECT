@@ -1,0 +1,93 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/rg210/Documents/GitHub/ECT/1 semestre/ISD/Praticas/Quartos/New folder/simulation/qsim
+T_opt
+!s110 1730809447
+VPJ@4DS_gTaU7YOza8T:mP2
+04 17 4 work teste_vlg_vec_tst fast 0
+=1-8c1645c0b94a-672a0e66-2a8-2248
+!s124 OEM10U3 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vhard_block
+Z3 !s110 1730809445
+!i10b 1
+!s100 cG=Ao3<3b_1=MXMOM393M0
+IZCe8XGZ8LffKi3X<NeNoz1
+R1
+Z4 w1730809443
+Z5 8teste.vo
+Z6 Fteste.vo
+!i122 16
+L0 122 34
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z9 !s108 1730809445.000000
+Z10 !s107 teste.vo|
+Z11 !s90 -work|work|teste.vo|
+!i113 0
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vteste
+R3
+!i10b 1
+!s100 18N4LF3i1fQV_U1QRj;zb1
+I?jLRWcf?PVfZ`T9KMPlma2
+R1
+R4
+R5
+R6
+!i122 16
+L0 32 89
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vteste_vlg_vec_tst
+R3
+!i10b 1
+!s100 4V7EBa72?PnWJEM9FS^f50
+IG_dJB=RZ6S?<1W1WQ_0IA2
+R1
+w1730809442
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 17
+L0 30 36
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R12
+R2
