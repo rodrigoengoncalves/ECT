@@ -2,7 +2,17 @@
 
 # a)
 def loadFile(fname, lst):
-    ...
+    file = open(fname, "r")
+    n = 1
+    for line in file:
+        lista = []
+        x = lista.append(line.split("\t"))
+        print(lista)
+        lst.append((n,x))
+        n += 1
+    #print(lst)
+
+
     
 # b) Crie a função notaFinal aqui...
 ...

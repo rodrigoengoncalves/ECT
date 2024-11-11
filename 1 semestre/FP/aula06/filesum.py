@@ -2,8 +2,8 @@ from tkinter import filedialog
 
 def main():
     # 1) Pedir nome do ficheiro (experimente cada alternativa):
-    #name = input("File? ")                                  #A
-    name = filedialog.askopenfilename(title="nums.txt") #B
+    name = input("File? ")                                  #A
+    #name = filedialog.askopenfilename(title="nums.txt") #B
     
     # 2) Calcular soma dos números no ficheiro:
     total = fileSum(name)
@@ -13,13 +13,13 @@ def main():
 
 
 def fileSum(filename):
-    soma = float
-    while True:
-        f = open(filename)
-        line = f.readline()
-        if line == "":
-            break
-        print(line)
+    soma = 0.0
+    fileobj = open(filename, "r")
+
+    for line in fileobj:
+        soma += float(line)
+    
+    
     return soma
 if __name__ == "__main__":
     main()
