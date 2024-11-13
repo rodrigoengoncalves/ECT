@@ -1,0 +1,13 @@
+|FullAdder
+Cout <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+b => inst5.IN0
+b => inst.IN0
+b => inst7.IN1
+a => inst5.IN1
+a => inst.IN1
+a => inst7.IN0
+CIN => inst1.IN1
+CIN => inst6.IN0
+S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+

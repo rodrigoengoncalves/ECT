@@ -1,0 +1,69 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/rg210/Documents/GitHub/ECT/1_semestre/ISD/Praticas/Quartos/ficha_9/simulation/qsim
+T_opt
+!s110 1731412930
+VbEX0AnQDmoS1G3W2m948?1
+04 21 4 work FullAdder_vlg_vec_tst fast 0
+=1-8c1645c0b94a-673343c2-111-f0c
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vFullAdder
+Z3 !s110 1731412929
+!i10b 1
+!s100 @CP=?ShZ[=M?n=GG>GW<e1
+I8jK2hYb?gT:l30Z^e<d3e3
+R1
+Z4 w1731412928
+8ficha9.vo
+Fficha9.vo
+!i122 2
+L0 32 120
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z7 !s108 1731412929.000000
+!s107 ficha9.vo|
+!s90 -work|work|ficha9.vo|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@full@adder
+vFullAdder_vlg_vec_tst
+R3
+!i10b 1
+!s100 mf[HG_K>HK[I>m`T7Gghi3
+II2O9W^A;291jPS7HETAWz3
+R1
+R4
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 3
+L0 30 52
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R8
+R2
+n@full@adder_vlg_vec_tst
