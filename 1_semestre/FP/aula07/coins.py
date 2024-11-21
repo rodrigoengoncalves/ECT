@@ -10,7 +10,6 @@ def value(bag):
     """Return total amount in a bag."""
     ...
 
-
 def transfer1coin(bag1, c, bag2):
     """Try to transfer one coin of value c from bag1 to bag2.
     If possible, transfer coin and return True, otherwise return False."""
