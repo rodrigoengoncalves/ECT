@@ -1,7 +1,12 @@
-import pyaudio
-lista = [
-    (1920, 10 , 2),
-    (2006, 8, 5, "datissima")]
+# return masked string
+def maskify(cc):
+    result = ""
+    print(len(cc))
+    if len(cc) <= 4:
+        cc = result
+    else:
+        result = ("#" * (len(cc) - 4)) + cc[len(cc)-4:len(cc)]
+        
+    print(result)   
 
-print()
-pyaudio.Stream(12)
+maskify("322")
