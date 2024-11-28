@@ -3,7 +3,7 @@ def maskify(cc):
     result = ""
     print(len(cc))
     if len(cc) <= 4:
-        cc = result
+        result = cc
     else:
         result = ("#" * (len(cc) - 4)) + cc[len(cc)-4:len(cc)]
         
