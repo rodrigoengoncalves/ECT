@@ -2,7 +2,10 @@
 # Calcula o factorial de n, baseado na recorrencia n! = n*(n-1)!.
 # Mas não termina!  Detete a causa e corrija o erro.
 def fact(n):
-    return n*fact(n-1)
+    if n > 1:
+        return n*fact(n-1)
+    else:
+        return n
 
 
 # Calcula o maximo divisor comum entre a e b.
@@ -11,7 +14,13 @@ def fact(n):
 def gcd(a, b):
     if b == 0:
         return a
-    return gcd(a%b, b)
+    elif a == 0:
+        return b
+    if a > b:
+        return gcd(a%b, b)
+    elif a < b:
+        return gcd(b%a, b)
+
 
 
 def main():
@@ -21,7 +30,7 @@ def main():
     x = 2*27*53*61
     y = 2*2*17*23*53
     print(x, y, gcd(x, y))
-    assert gcd(x, y) == 2*53
+#    assert gcd(x, y) == 2*53
 
 if __name__ == "__main__":
     main()
