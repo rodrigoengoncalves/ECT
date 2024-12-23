@@ -1,0 +1,11 @@
+|testep_2
+pin_name1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+reset => inst9.ACLR
+reset => inst7.ACLR
+clock => inst9.CLK
+clock => inst7.CLK
+x => inst8.IN0
+x => inst6.IN1
+x => inst13.IN0
+
+

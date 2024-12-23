@@ -1,0 +1,65 @@
+def is_phonenumber(phone_number):
+    veredict = bool
+    if not type(phone_number) == str:
+        print("numero nao é uma string")
+        veredict = False
+        return veredict
+    if phone_number[0] != "+" and not phone_number.isdigit():
+        print("o primeiro digito nao é + nem um digito") 
+        veredict = False
+        return veredict
+
+    
+    if phone_number[0] == "+":
+        if len(phone_number) < 4:
+            print("numero incompleto")
+        else:
+            for i in range(0, len(phone_number)):
+                if phone_number[i].isdigit() and veredict == True:
+                    veredict == True
+                else:
+                    veredict == False
+                    break
+    else:
+        if len(phone_number) < 3:
+            print("numero incompleto")
+        else:
+            for i in range(3, len(phone_number)):
+                if phone_number[i].isdigit() and veredict == True:
+                    veredict == True
+                else:
+                    veredict == False
+                    break
+    return veredict
+
+
+
+# set() é a maneira como podemos criar um conjunto de valores sem repetiçoes
+
+
+
+
+
+def menu():
+    while True:
+        print("""1) Registar chamada
+2) Ler ficheiro
+3) Listar clientes
+4) Fatura
+5) Terminar
+Opção?
+""")
+        resposta = int(input("-> "))
+
+        if resposta == 5:
+            break
+        elif resposta == 1:
+            print(is_phonenumber("-12344124"))
+        else:
+            print("opçao nao reconhecida")
+
+
+def main():
+    menu()
+
+main()

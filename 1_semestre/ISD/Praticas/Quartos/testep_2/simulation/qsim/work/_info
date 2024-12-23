@@ -1,0 +1,166 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/rg210/Desktop/ECT/1_semestre/ISD/Praticas/Quartos/testep_2/simulation/qsim
+T_opt
+Z2 !s110 1734370780
+V51SYj3bG0Z?2Ymh1=8K1d1
+04 20 13 work testep_2_vhd_vec_tst testep_2_arch 1
+=1-8c1645c0b94a-676065dc-19a-3a40
+!s124 OEM10U3 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Ehard_block
+Z3 w1734370779
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+!i122 2
+R1
+Z10 8testep_2.vho
+Z11 Ftestep_2.vho
+l0
+L35 1
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+Z12 OL;C;2021.2;73
+32
+R2
+!i10b 1
+Z13 !s108 1734370779.000000
+Z14 !s90 -work|work|testep_2.vho|
+Z15 !s107 testep_2.vho|
+!i113 0
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+!i122 2
+l65
+L51 20
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R12
+32
+R2
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Etestep_2
+R3
+R5
+R9
+R4
+Z18 DPx6 altera 11 dffeas_pack 0 22 ^oS01<AhH<ZbI@CNcPk2V0
+R6
+R7
+R8
+Z19 DPx6 altera 28 altera_primitives_components 0 22 Y19K[Kjfb73Y`YfbP9Kf30
+!i122 2
+R1
+R10
+R11
+l0
+L80 1
+VESm[@b0SSeYeaC[>9FPa00
+!s100 LjHmLzj:6=RcM=moTW2Ji1
+R12
+32
+R2
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Astructure
+R5
+R9
+R4
+R18
+R6
+R7
+R8
+R19
+DEx4 work 8 testep_2 0 22 ESm[@b0SSeYeaC[>9FPa00
+!i122 2
+l131
+L96 204
+VBNZh4OM;`D4cRTXzJ35UZ2
+!s100 UHMF7iR[XP1B637C::o2e2
+R12
+32
+R2
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Etestep_2_vhd_vec_tst
+Z20 w1734370778
+R7
+R8
+!i122 3
+R1
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32 1
+Vm@NAAn`oWbGJCJTla@4U72
+!s100 =bf7W3VFI47fd7T4bMTGW0
+R12
+32
+R2
+!i10b 1
+Z23 !s108 1734370780.000000
+Z24 !s90 -work|work|Waveform.vwf.vht|
+Z25 !s107 Waveform.vwf.vht|
+!i113 0
+R16
+R17
+Atestep_2_arch
+R7
+R8
+DEx4 work 20 testep_2_vhd_vec_tst 0 22 m@NAAn`oWbGJCJTla@4U72
+!i122 3
+l49
+L34 63
+VcmaSI6l[JUck7KGd]9>F90
+!s100 ?P3OEiRQ`lJzcMW9`]`[:2
+R12
+32
+R2
+!i10b 1
+R23
+R24
+R25
+!i113 0
+R16
+R17
