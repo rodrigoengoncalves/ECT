@@ -1,45 +1,3 @@
-def is_phonenumber(phone_number):
-    veredict = bool
-    if not type(phone_number) == str:
-        print("numero nao é uma string")
-        veredict = False
-        return veredict
-    if phone_number[0] != "+" and not phone_number.isdigit():
-        print("o primeiro digito nao é + nem um digito") 
-        veredict = False
-        return veredict
-
-    
-    if phone_number[0] == "+":
-        if len(phone_number) < 4:
-            print("numero incompleto")
-        else:
-            for i in range(0, len(phone_number)):
-                if phone_number[i].isdigit() and veredict == True:
-                    veredict == True
-                else:
-                    veredict == False
-                    break
-    else:
-        if len(phone_number) < 3:
-            print("numero incompleto")
-        else:
-            for i in range(3, len(phone_number)):
-                if phone_number[i].isdigit() and veredict == True:
-                    veredict == True
-                else:
-                    veredict == False
-                    break
-    return veredict
-
-
-
-# set() é a maneira como podemos criar um conjunto de valores sem repetiçoes
-
-
-
-
-
 def menu():
     while True:
         print("""1) Registar chamada
@@ -47,18 +5,83 @@ def menu():
 3) Listar clientes
 4) Fatura
 5) Terminar
-Opção?
 """)
-        resposta = int(input("-> "))
+        resp = int(input("Opção?"))
 
-        if resposta == 5:
+        if resp == 1:
+            registar_chamada()
+        elif resp == 2:
+            ficheiro()
+        elif resp == 3:
+            clientes(origem)
+        elif resp == 4:
+            pass
+        elif resp == 5:
             break
-        elif resposta == 1:
-            print(is_phonenumber("-12344124"))
         else:
-            print("opçao nao reconhecida")
+            print("resposta não reconhecida")
 
+def isnumber(phone_number):
+    veredict = bool 
+    if isinstance(phone_number, str):
+        if (phone_number[0].isdigit() and len(phone_number) >= 3) or (phone_number[0] == "+" and len(phone_number) >= 4):
+            veredict = True
+        else:
+            veredict = False
 
+    else:
+        veredict = False     
+
+    return veredict   
+def registar_chamada():
+    while True:
+        tel_origem = input("Telefone origem? ")
+        if isnumber(tel_origem): break
+
+    while True:
+        tel_destino = input("Telefone destino? ")
+        if isnumber(tel_destino): break
+    
+    duracao = input("Duração (s)? ")
+
+    origem.append(tel_origem)
+    destino.append(tel_destino)
+    tempo.append(duracao)
+def ficheiro():
+    file_name = input("Nome do ficheiro? ")
+    global origem, destino, tempo
+    with open(file_name, "r") as file:
+        origem = []
+        destino = []
+        tempo = []
+        for line in file:
+            line = line.split()
+            origem.append(line[0])
+            destino.append(line[1])
+            tempo.append(line[2])
+        file.close()
+def clientes(org):
+    repetidos = []
+    output = "Clientes:"
+    for i in org:
+        if not(i in repetidos):
+            repetidos.append(i)
+            output = output + " " +i
+    print(output)
+
+def fatura():
+    dest = []
+    time = []
+    numero = input("Cliente? ")
+    for i in range(0, len(origem)):
+        if origem[i] == numero:
+            dest.append(destino[i])
+            time.append(tempo.append[i])
+    #escrever os  dados obtidos
+    print("Destino Duração Custo")
+    for i in range(0,len(dest)):
+        if dest[i][0] == "2":
+            pass
 def main():
     menu()
 
