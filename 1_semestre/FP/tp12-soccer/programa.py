@@ -5,7 +5,7 @@ def ler_ficheiro(file_name):
             equipa = ()
             line = line.strip()
             line = line.split(",")
-            equipa = (line[0],line[1],line[2],line[3],line[4],line[5],line[6])
+            equipa = (line[0],line[1],line[2],line([3],line[4],line[5],line[6])
             equipas.append(equipa)
 
     return equipas
