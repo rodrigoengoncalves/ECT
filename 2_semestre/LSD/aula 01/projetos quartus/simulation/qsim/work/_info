@@ -1,0 +1,69 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/rg210/Desktop/ECT/2_semestre/LSD/projetos quartus/simulation/qsim
+T_opt
+Z2 !s110 1739885819
+VJfG=3_>IVCbAOonO4X]Md0
+04 20 4 work Gatedemo_vlg_vec_tst fast 0
+=1-8c1645c0b94a-67b48cfb-26f-40f8
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vGatedemo
+R2
+!i10b 1
+!s100 _;Johj>gIcj7G^_U?In2:2
+IYT`iREmlK4B?MIKhSAX1?3
+R1
+w1739885818
+8Gatedemo.vo
+FGatedemo.vo
+!i122 2
+L0 32 74
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z6 !s108 1739885819.000000
+!s107 Gatedemo.vo|
+!s90 -work|work|Gatedemo.vo|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@gatedemo
+vGatedemo_vlg_vec_tst
+R2
+!i10b 1
+!s100 ET14n<=nQ;T8R@8CeK4ZT3
+I368z1OT`Z[[khaR:]AG0m3
+R1
+w1739885817
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 3
+L0 30 36
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R7
+R3
+n@gatedemo_vlg_vec_tst

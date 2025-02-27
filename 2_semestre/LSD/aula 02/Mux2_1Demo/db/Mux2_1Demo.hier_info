@@ -1,0 +1,14 @@
+|Mux2_1Demo
+LEDR[0] <= Mux2_1:inst.Y
+SW[0] => Mux2_1:inst.A
+SW[1] => Mux2_1:inst.B
+KEY[0] => Mux2_1:inst.Sel
+
+
+|Mux2_1Demo|Mux2_1:inst
+A => Y.DATAB
+B => Y.DATAA
+Sel => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
