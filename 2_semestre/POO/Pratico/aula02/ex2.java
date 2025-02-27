@@ -38,16 +38,16 @@ public class ex2 {
         System.out.print(texto);
 
         while (true) {
-            if (cc.hasNextInt()) {  // Verifica se é um número
+            if (cc.hasNextInt()) {  
                 n = cc.nextInt();
-                if (n > 1) {  // Verifica se é maior que 1
-                    return n;  // Retorna o valor e sai da função
+                if (n > 1) {  
+                    return n;  
                 } else {
                     System.out.print("Erro: Insira um número maior que 1: ");
                 }
             } else {
                 System.out.print("Erro: Insira um número inteiro válido: ");
-                cc.next();  // Descarta o input inválido
+                cc.next();  
             }
         }
     }
