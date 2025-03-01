@@ -1,63 +1,66 @@
 package aula02;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ex4 {
-    public static void main(String[] args) throws IOException {
-        ArrayList<Double> teorica = new ArrayList<>();
-        ArrayList<Double> pratica = new ArrayList<>();
-        ArrayList<Integer> nota_final = new ArrayList<>();
+class ex4 {
 
-        String resposta = "";
-        criarArquivo();
-        Scanner cc = new Scanner(System.in);
+    public static Scanner cc = new Scanner(System.in);
 
-        while(!resposta.equals("nao"))
-        {
+    public static void main(String[] args){
+        String resposta;
+        String tabela = "NotaT NotaP Pauta";
         
-            System.out.print("Nota da Teorica: ");
-            double t = cc.nextDouble();
+        Boolean acabar = false;
 
-            System.out.print("Nota da Pratica: ");
-            double p = cc.nextDouble();
+        do {
+            tabela = pauta(media(),tabela);
 
-            cc.nextLine();
-            
-            teorica.add(t);
-            pratica.add(p);
-            nota_final.add(media(t,p));
-            
-            System.out.print("pretende continuar ?");
+            System.out.print("deseja continuar a adicionar notas ? ->");
             resposta = cc.nextLine();
+
+            if(!resposta.contentEquals("sim")){
+                acabar = true;
+            }
+
+        } while (acabar == false);
+
+        System.out.println(tabela);
+
+    }
+    public static double[] media(){
+        
+        System.out.print("Escreve a nota da teorica");
+        double nt = cc.nextDouble();
+        cc.nextLine();
+
+        System.out.print("Escreve a nota da pratica");
+        double np = cc.nextDouble();
+        cc.nextLine();
+
+        double nf;
+
+        if(nt > 7 && np > 7){
+            nf = nt*0.4 + np*0.6;
+        }else{
+            nf= 66.0;
         }
         
-        cc.close();
+        return new double[]{nt,np,nf};
     }
 
-    public static int media(double t,double p){
-        int nota_final;
-
-        if(t > 7 || p > 7)
-        {
-            nota_final = (int) Math.round(0.4 * t + 0.6*p) ;
-            return nota_final;
-        }
-        else
-        {
-            return 66;
-        }
+    public static String pauta(double[] notas, String texto){
+        texto = texto+"\n"+notas[0];
         
-    }
-
-    public static void criarArquivo() throws IOException 
-    {
-        Path local = Path.of("C:\\Users\\rg210\\Desktop\\ECT\\2_semestre\\POO\\Pratico\\aula02\\pauta.txt");
-        Files.createFile(local);
-        Files.writeString(local, "ola");
+        
+        for(int i = 1; i < notas.length; i++){
+            
+            if(notas[i]<10){
+                texto = texto + "    " + notas[i];    
+            }else{
+                texto = texto + "   " +notas[i];
+            }
+        }        
+        
+        return texto;
     }
 }
