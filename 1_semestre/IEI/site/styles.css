@@ -1,0 +1,409 @@
+
+
+/* Cores da Natureza */
+:root {
+    --verde-floresta: #228B22;
+    --verde-claro: #32cd32;
+    --marrom-terra: #8B4513;
+    --azul-agua: #87CEEB;
+    --branco: #ffffff;
+    --rosa:linear-gradient(90deg, rgba(38,104,145,1) 1%, rgba(28,112,56,1) 46%, rgba(32,156,167,1) 100%);
+    --azul-escuro: #001220
+}
+
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(38,104,145);
+    background: linear-gradient(90deg, rgba(38,104,145,1) 1%, rgba(28,112,56,1) 46%, rgba(32,156,167,1) 100%);
+    background: linear-gradient();
+    color: var(--branco);
+    line-height: 1.8;
+}
+
+header {
+    background-color: var(--rosa);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0; /* Inicialmente invisível */
+    animation: fadeInMove 1s ease forwards; /* Animação chamada fadeInMove */
+}
+
+/* Definição da animação */
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); /* Começa deslocado para cima */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Volta à posição original */
+    }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgba(255,149,0,1);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(rgba(255,149,0,1));
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.content p {
+    flex: 1;
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+
+.content img {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.content img:hover {
+    transform: scale(1.05);
+}
+
+.fade-section {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background-color: var(--rosa);
+    color: var(--branco);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.content {
+    display: flex; /* Ativa o layout flexível */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: space-between; /* Espaçamento uniforme entre elementos */
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+.content img {
+    max-width: 40%; /* Define o tamanho máximo da imagem */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.content p {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
+    margin-right: 20px; /* Espaço entre o texto e a imagem */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255,149,0,1);
+    color: black;
+    border: none;
+    border-radius:50%;
+    padding: 20px 25px;
+    cursor: pointer;
+    opacity: 0; /* Invisível inicialmente */
+    transform: scale(0.8); /* Escalado para 80% inicialmente */
+    z-index: 1000;
+    font-size: 14px;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+#backToTop:hover {
+    background-color: rgb(180, 105, 0);
+}
+
+/* Classe para mostrar o botão */
+#backToTop.show {
+    opacity: 1; /* Torna visível */
+    transform: scale(1); /* Escala normal */
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    max-width: 800px; /* Ajuste conforme necessário para limitar a largura máxima */
+    height: 400px; /* Altura fixa para o carrossel */
+    margin: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: #f0f0f0; /* Cor de fundo para evitar espaços vazios */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Transição suave */
+    width: 100%;
+    height: 100%;
+    animation: slide 9s infinite;
+}
+
+.carousel-images img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço */
+    height: 100%; /* Garante que a imagem mantenha a altura */
+    object-fit: cover; /* Ajusta o corte para encaixar no espaço */
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-65%); }
+    66% { transform: translateX(-120%); }
+    100% { transform: translateX(0); }
+}
+
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card.flipped {
+    background-color: #4CAF50;
+}
+
+.card.matched {
+    background-color: #ccc;
+    pointer-events: none;
+}
+
+.card:active {
+    transform: scale(0.95);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tree {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(30deg);
+    animation: treeAnimate 5s linear infinite;
+  }
+  
+  @keyframes treeAnimate {
+    0% {
+      transform: rotateX(-20deg) rotateY(360deg);
+    }
+  
+    100% {
+      transform: rotateX(-20deg) rotateY(0deg);
+    }
+  }
+  
+  .tree div {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: translateY(calc(25px * var(--x))) translateZ(0px);
+  }
+  
+  .tree div.branch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #69c069, #77dd77);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    border-bottom: 5px solid #00000019;
+    transform-origin: bottom;
+    transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(28.5px);
+  }
+  
+  .tree div.stem span {
+    position: absolute;
+    top: 110px;
+   /* updated top value */
+    left: calc(50% - 7.5px);
+    width: 15px;
+    height: 50%;
+    background: linear-gradient(90deg, #bb4622, #df7214);
+    border-bottom: 5px solid #00000019;
+    transform-origin: bottom;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(7.5px);
+  }
+  
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    filter: blur(20px);
+    transform-style: preserve-3d;
+    transform: rotateX(90deg) translateZ(-65px);
+  }
+  
+  /* Contêiner do carro */
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Carro em 3D */
+  .car {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    transform-style: preserve-3d;
+    animation: carAnimate 5s linear infinite; /* Animação do carro girando */
+  }
+  
+  /* Corpo do carro */
+  .car-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1E90FF; /* Cor do carro */
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Rodas do carro */
+  .wheel {
+    position: absolute;
+    bottom: -15px;
+    width: 40px;
+    height: 40px;
+    background-color: #000; /* Cor das rodas */
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+    .front-wheel {
+    left: 20px;
+    }
+
+    .back-wheel {
+    right: 20px;
+    }
+
+    /* Animação de rotação 3D do carro */
+    @keyframes carAnimate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg); /* Meio da rotação */
+    }
+    100% {
+        transform: rotateY(360deg); /* Volta à posição inicial */
+    }
+    }
+
+    .center{
+        text-align: center;
+    }
+
+
+/* Estilo para o container do gráfico */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+ }
+  
+  /* Estilo do canvas do gráfico */
+  canvas {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+ }
+
+  .img-esquerda {
+    float: left;
+    margin-right: 15px;
+    width: 300px;
+    height: 200px;
+ }
+    
+    .img-direita {
+    float:right ;
+    margin-left: 15px;
+    width: 300px;
+    height: 300px;
+ }
