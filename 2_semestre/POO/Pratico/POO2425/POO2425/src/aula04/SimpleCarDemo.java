@@ -1,3 +1,4 @@
+package aula04;
 import java.util.Scanner;
 
 class Car {
@@ -14,7 +15,7 @@ class Car {
     }
 
     public void drive(int distance) {
-        //TODO: acumular distância percorrida
+        this.kms += distance;
     }
 }
 
@@ -29,14 +30,18 @@ public class SimpleCarDemo {
         // Renault Megane Sport Tourer, 2015, kms: 35356
         // Toyota Camry, 2010, kms: 32456
         // Mercedes Vito, 2008, kms: 273891
-    }
 
+
+        for (Car carros : cars){
+            System.out.printf("%s %s, %d, kms: %d %n", carros.make, carros.model, carros.year, carros.kms);
+        }
+    }
     public static void main(String[] args) {
 
-        Car[] cars = // TODO: completar
-        cars[0] = // TODO: completar
-        cars[1] = // TODO: completar
-        cars[2] = // TODO: completar
+        Car[] cars = new Car[3];
+        cars[0] = new Car("Renault", "Megane Sport Tourer", 2015, 35356);
+        cars[1] = new Car("Toyota", "Camry", 2010, 32456);
+        cars[2] = new Car("Mercedes", "Vito", 2008, 273891);
 
         listCars(cars);
 
@@ -46,12 +51,13 @@ public class SimpleCarDemo {
             int kms = (int)Math.round(Math.random()*1000); // viagem até 1000 kms
             System.out.printf("Carro %d viajou %d quilómetros.\n", j, kms);
             
-            // TODO: adicionar viagem ao carro j
+            cars[j].drive(kms);
         }
 
         listCars(cars);
 
         sc.close();
+        
 
     }
 }

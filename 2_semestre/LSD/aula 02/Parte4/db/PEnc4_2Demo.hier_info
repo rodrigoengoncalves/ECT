@@ -1,0 +1,25 @@
+|PEnc4_2Demo
+LEDG[0] <= PriorityEncoder:inst.outp[0]
+LEDG[1] <= PriorityEncoder:inst.outp[1]
+SW[0] => PriorityEncoder:inst.inp[0]
+SW[1] => PriorityEncoder:inst.inp[1]
+SW[2] => PriorityEncoder:inst.inp[2]
+SW[3] => PriorityEncoder:inst.inp[3]
+LEDR[0] <= PriorityEncoder:inst.valid
+
+
+|PEnc4_2Demo|PriorityEncoder:inst
+inp[0] => valid.DATAA
+inp[1] => outp.DATAA
+inp[1] => valid.OUTPUTSELECT
+inp[2] => outp.OUTPUTSELECT
+inp[2] => outp.DATAA
+inp[2] => valid.OUTPUTSELECT
+inp[3] => outp.OUTPUTSELECT
+inp[3] => outp.OUTPUTSELECT
+inp[3] => valid.OUTPUTSELECT
+outp[0] <= outp.DB_MAX_OUTPUT_PORT_TYPE
+outp[1] <= outp.DB_MAX_OUTPUT_PORT_TYPE
+valid <= valid.DB_MAX_OUTPUT_PORT_TYPE
+
+
