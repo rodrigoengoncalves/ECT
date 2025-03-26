@@ -1,0 +1,114 @@
+|AccN_Demo
+LEDR[0] <= AccN:inst.dataOut[0]
+LEDR[1] <= AccN:inst.dataOut[1]
+LEDR[2] <= AccN:inst.dataOut[2]
+LEDR[3] <= AccN:inst.dataOut[3]
+LEDR[4] <= AccN:inst.dataOut[4]
+LEDR[5] <= AccN:inst.dataOut[5]
+LEDR[6] <= AccN:inst.dataOut[6]
+LEDR[7] <= AccN:inst.dataOut[7]
+KEY[0] => AccN:inst.clk
+SW[0] => AccN:inst.dataln[0]
+SW[1] => AccN:inst.dataln[1]
+SW[2] => AccN:inst.dataln[2]
+SW[3] => AccN:inst.dataln[3]
+SW[4] => AccN:inst.dataln[4]
+SW[5] => AccN:inst.dataln[5]
+SW[6] => AccN:inst.dataln[6]
+SW[7] => AccN:inst.dataln[7]
+SW[8] => AccN:inst.reset
+SW[9] => AccN:inst.enable
+
+
+|AccN_Demo|AccN:inst
+clk => RegN:reg_inst.clk
+reset => RegN:reg_inst.reset
+enable => RegN:reg_inst.enable
+dataln[0] => AdderN:adder_inst.B[0]
+dataln[1] => AdderN:adder_inst.B[1]
+dataln[2] => AdderN:adder_inst.B[2]
+dataln[3] => AdderN:adder_inst.B[3]
+dataln[4] => AdderN:adder_inst.B[4]
+dataln[5] => AdderN:adder_inst.B[5]
+dataln[6] => AdderN:adder_inst.B[6]
+dataln[7] => AdderN:adder_inst.B[7]
+dataOut[0] <= RegN:reg_inst.dataOut[0]
+dataOut[1] <= RegN:reg_inst.dataOut[1]
+dataOut[2] <= RegN:reg_inst.dataOut[2]
+dataOut[3] <= RegN:reg_inst.dataOut[3]
+dataOut[4] <= RegN:reg_inst.dataOut[4]
+dataOut[5] <= RegN:reg_inst.dataOut[5]
+dataOut[6] <= RegN:reg_inst.dataOut[6]
+dataOut[7] <= RegN:reg_inst.dataOut[7]
+
+
+|AccN_Demo|AccN:inst|AdderN:adder_inst
+A[0] => Add0.IN8
+A[1] => Add0.IN7
+A[2] => Add0.IN6
+A[3] => Add0.IN5
+A[4] => Add0.IN4
+A[5] => Add0.IN3
+A[6] => Add0.IN2
+A[7] => Add0.IN1
+B[0] => Add0.IN16
+B[1] => Add0.IN15
+B[2] => Add0.IN14
+B[3] => Add0.IN13
+B[4] => Add0.IN12
+B[5] => Add0.IN11
+B[6] => Add0.IN10
+B[7] => Add0.IN9
+SUM[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+SUM[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+SUM[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+SUM[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+SUM[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+SUM[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+SUM[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+SUM[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AccN_Demo|AccN:inst|RegN:reg_inst
+clk => reg[0].CLK
+clk => reg[1].CLK
+clk => reg[2].CLK
+clk => reg[3].CLK
+clk => reg[4].CLK
+clk => reg[5].CLK
+clk => reg[6].CLK
+clk => reg[7].CLK
+reset => reg[0].ACLR
+reset => reg[1].ACLR
+reset => reg[2].ACLR
+reset => reg[3].ACLR
+reset => reg[4].ACLR
+reset => reg[5].ACLR
+reset => reg[6].ACLR
+reset => reg[7].ACLR
+enable => reg[7].ENA
+enable => reg[6].ENA
+enable => reg[5].ENA
+enable => reg[4].ENA
+enable => reg[3].ENA
+enable => reg[2].ENA
+enable => reg[1].ENA
+enable => reg[0].ENA
+dataIn[0] => reg[0].DATAIN
+dataIn[1] => reg[1].DATAIN
+dataIn[2] => reg[2].DATAIN
+dataIn[3] => reg[3].DATAIN
+dataIn[4] => reg[4].DATAIN
+dataIn[5] => reg[5].DATAIN
+dataIn[6] => reg[6].DATAIN
+dataIn[7] => reg[7].DATAIN
+dataOut[0] <= reg[0].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= reg[1].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= reg[2].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= reg[3].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[4] <= reg[4].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[5] <= reg[5].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[6] <= reg[6].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[7] <= reg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

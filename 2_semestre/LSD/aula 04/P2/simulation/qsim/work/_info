@@ -1,0 +1,121 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/LSD/Aula4/P2/simulation/qsim
+T_opt
+!s110 1742427468
+V4bCV0U`jgh]VBb2P[>Y6G3
+04 21 14 work register8_vhd_vec_tst register8_arch 1
+=1-5414f3d25ef6-67db554c-ae-20bc
+R1
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Eregister8
+Z3 w1742427466
+Z4 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 FM43ccaBdaD8gjdf^fhXa1
+Z5 DPx10 cycloneive 21 cycloneive_components 0 22 cmXO:d;25aXGLGm2El8?>3
+Z6 DPx4 ieee 16 vital_primitives 0 22 Y]H?Y_]z4@VoaWAGJ=36m1
+Z7 DPx6 altera 11 dffeas_pack 0 22 zdIMR1XmDVjRfzNPY?MRj3
+Z8 DPx4 ieee 12 vital_timing 0 22 6STbz=m1W[80IE06h_el^0
+Z9 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z10 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+Z11 DPx6 altera 28 altera_primitives_components 0 22 E4E]JL`Gg4N^O71N]`[G;0
+!i122 2
+R2
+Z12 8Register_Demo.vho
+Z13 FRegister_Demo.vho
+l0
+L37 1
+VQRTCZ_:WL=[37QOaA:aBK0
+!s100 Wz8O2Vg7;]dXkhgba9VK13
+Z14 OL;C;2023.3;77
+32
+Z15 !s110 1742427467
+!i10b 1
+Z16 !s108 1742427467.000000
+Z17 !s90 -work|work|Register_Demo.vho|
+Z18 !s107 Register_Demo.vho|
+!i113 0
+Z19 o-work work
+Z20 tExplicit 1 CvgOpt 0
+Astructure
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R11
+DEx4 work 9 register8 0 22 QRTCZ_:WL=[37QOaA:aBK0
+!i122 2
+l87
+L46 367
+Vo2h;h5NiJ0gn@lVBlgeZJ0
+!s100 SITdE6gH5g5kQU0FJRlCk3
+R14
+32
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R19
+R20
+Eregister8_vhd_vec_tst
+R3
+R9
+R10
+!i122 3
+R2
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32 1
+VlW1jk[G2igZOGSBO[Xo7[0
+!s100 I[>Q@]EcA1Oac_1WY;05H2
+R14
+32
+R15
+!i10b 1
+R16
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 0
+R19
+R20
+Aregister8_arch
+R9
+R10
+DEx4 work 21 register8_vhd_vec_tst 0 22 lW1jk[G2igZOGSBO[Xo7[0
+!i122 3
+l49
+L34 302
+Vdi7WP^Do_H>`eo52_Qhd10
+!s100 ZDbGNPZcUk7j;W7AnY2gj2
+R14
+32
+R15
+!i10b 1
+R16
+R23
+R24
+!i113 0
+R19
+R20

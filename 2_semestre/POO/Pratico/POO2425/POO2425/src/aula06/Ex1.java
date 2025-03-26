@@ -48,24 +48,63 @@ class Aluno extends Pessoa{
     private int nMecanograico; 
     private DateYMD dataInscri;
 
-    
-
     public Aluno(String name, int cc, DateYMD dataNasc, DateYMD dataInscri){
         super(name, cc, dataNasc);
+        
         this.nMecanograico = nMecanograico;
         this.dataInscri = dataInscri;
-
     }
+
+    public int getNMec(){
+        return this.nMecanograico;
+    }
+
+
 }
 
+class Bolseiro extends Aluno{
+    private Professor prof;
+    private int valor; 
+    
+    public Bolseiro(String name, int cc, DateYMD dataNasc, Professor prof, int valor){
+        super(name, cc, dataNasc, new DateYMD(1, 11, 2019));
+
+        this.prof = prof;
+        this.valor = valor;
+    
+    }  
+    public void setBolsa(int valor){
+    
+    this.valor = valor;
+    }
+
+    public String getNome(){
+        return super.getNome();
+    }
+
+    public int getNMec(){
+        return super.getNMec();
+    }
+
+    public int getBolsa(){
+        return valor;
+    }
+
+    public Professor getOrientador(){
+        return this.prof;
+    }
+}
 
 class Professor extends Pessoa{
     
     private String categoria;
+    private String departamento;
     
-    public Professor(){
+    public Professor(String name, int cc, DateYMD dataNasc, String categoria, String departamento){
+        super(name, cc, dataNasc);
         
-
+        this.categoria = categoria;
+        this.departamento = departamento;
 
     }
 }

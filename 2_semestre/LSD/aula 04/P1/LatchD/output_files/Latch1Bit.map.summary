@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Mar 19 23:27:51 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : Latch1Bit
+Top-level Entity Name : Latch1BitTopLevel
+Family : Cyclone IV E
+Total logic elements : 1
+    Total combinational functions : 1
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

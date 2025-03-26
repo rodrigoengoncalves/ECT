@@ -1,0 +1,204 @@
+m255
+K4
+z2
+!s12c _opt2
+Z0 !s99 nomlopt
+Z1 !s12c _opt
+R0
+!s12c _opt1
+R0
+R1
+R0
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/LSD/Aula4/P4/simulation/qsim
+T_opt
+!s110 1742431398
+V6`jS^CY]ha_5`[7DlbSae2
+Z3 04 23 16 work freqdivider_vhd_vec_tst freqdivider_arch 1
+=1-5414f3d25ef6-67db64a6-6-3a74
+R0
+Z4 !s12b OEM100
+Z5 !s124 OEM10U3 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2023.3;77
+R2
+T_opt1
+Z8 !s12d 2908000
+!s110 1742431324
+VDYh57jCk>b<ZkgH0k<8i>3
+R3
+=1-5414f3d25ef6-67db645b-1b1-3cc0
+!s9c 1
+R0
+R4
+R5
+Z9 o-quiet -sdf -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim -sdfmax FreqDivider_vhd_vec_tst/i1=FreqDivider_Demo_vhd.sdo -suppress 1948 +acc
+R6
+n@_opt1
+R7
+R2
+T_opt2
+R8
+!s110 1742431906
+VdPQ=eD0GSUeNge@CkM4h?0
+R3
+=1-5414f3d25ef6-67db66a1-110-5d74
+!s9c 1
+R0
+R4
+R5
+R9
+R6
+n@_opt2
+R7
+Efreqdivider
+Z10 w1742431902
+Z11 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 FM43ccaBdaD8gjdf^fhXa1
+Z12 DPx10 cycloneive 21 cycloneive_components 0 22 cmXO:d;25aXGLGm2El8?>3
+Z13 DPx4 ieee 16 vital_primitives 0 22 Y]H?Y_]z4@VoaWAGJ=36m1
+Z14 DPx6 altera 11 dffeas_pack 0 22 zdIMR1XmDVjRfzNPY?MRj3
+Z15 DPx4 ieee 12 vital_timing 0 22 6STbz=m1W[80IE06h_el^0
+Z16 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z17 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+Z18 DPx6 altera 28 altera_primitives_components 0 22 E4E]JL`Gg4N^O71N]`[G;0
+!i122 20
+R2
+Z19 8FreqDivider_Demo.vho
+Z20 FFreqDivider_Demo.vho
+l0
+L80 1
+VMZH9O>fh76g3CATg9jac53
+!s100 l>BZ1zBQ69@YgBkbg`9^12
+Z21 OL;C;2023.3;77
+32
+Z22 !s110 1742431904
+!i10b 1
+Z23 !s108 1742431904.000000
+Z24 !s90 -work|work|FreqDivider_Demo.vho|
+Z25 !s107 FreqDivider_Demo.vho|
+!i113 0
+Z26 o-work work
+Z27 tExplicit 1 CvgOpt 0
+Astructure
+R11
+R12
+R13
+R14
+R15
+R16
+R17
+R18
+DEx4 work 11 freqdivider 0 22 MZH9O>fh76g3CATg9jac53
+!i122 20
+l416
+L125 3636
+V9>VA1K?_bo4LBF<ZR0Had0
+!s100 ^D^Y;Z5L`1Q;MM2:kBP5G1
+R21
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 0
+R26
+R27
+Efreqdivider_vhd_vec_tst
+Z28 w1742431901
+R16
+R17
+!i122 21
+R2
+Z29 8Waveform.vwf.vht
+Z30 FWaveform.vwf.vht
+l0
+L32 1
+VK1T4RYWATzok?lR2`kE4T3
+!s100 M8mL8a>JY5MJ@lN9I^23X0
+R21
+32
+R22
+!i10b 1
+R23
+Z31 !s90 -work|work|Waveform.vwf.vht|
+Z32 !s107 Waveform.vwf.vht|
+!i113 0
+R26
+R27
+Afreqdivider_arch
+R16
+R17
+DEx4 work 23 freqdivider_vhd_vec_tst 0 22 K1T4RYWATzok?lR2`kE4T3
+!i122 21
+l47
+L34 226
+VjBURfM>noI>D_OSj@8K0<2
+!s100 T^9fFBQcoDB219cE2DYPh0
+R21
+32
+R22
+!i10b 1
+R23
+R31
+R32
+!i113 0
+R26
+R27
+Ehard_block
+R10
+R13
+R11
+R15
+R16
+R17
+R12
+!i122 20
+R2
+R19
+R20
+l0
+L35 1
+VO;cUSklm4Sig<`__bK=J@0
+!s100 0CTYib@dc:ObIVR9DRSK?2
+R21
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 0
+R26
+R27
+Astructure
+R13
+R11
+R15
+R16
+R17
+R12
+DEx4 work 10 hard_block 0 22 O;cUSklm4Sig<`__bK=J@0
+!i122 20
+l65
+L51 20
+VGLY:g5RDEe^dIV`12>FYD3
+!s100 6LcB1AebN6j_bAmfc?Z:_0
+R21
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 0
+R26
+R27

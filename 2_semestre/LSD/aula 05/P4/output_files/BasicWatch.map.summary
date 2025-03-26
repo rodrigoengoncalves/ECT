@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Mar 25 15:49:30 2025
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : BasicWatch
+Top-level Entity Name : BasicWatch
+Family : Cyclone IV E
+Total logic elements : 156
+    Total combinational functions : 156
+    Dedicated logic registers : 63
+Total registers : 63
+Total pins : 48
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

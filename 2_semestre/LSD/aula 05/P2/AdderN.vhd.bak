@@ -1,0 +1,13 @@
+entity AdderN is
+    Generic (N : positive := 8);  -- Valor padrão de N é 8
+    Port (
+        operand0 : in std_logic_vector(N-1 downto 0);
+        operand1 : in std_logic_vector(N-1 downto 0);
+        result : out std_logic_vector(N-1 downto 0)
+    );
+end entity AdderN;
+
+architecture Behavioral of AdderN is
+begin
+    result <= std_logic_vector(unsigned(operand0) + unsigned(operand1));
+end architecture Behavioral;

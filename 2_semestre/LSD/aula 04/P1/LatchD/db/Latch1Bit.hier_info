@@ -1,0 +1,12 @@
+|Latch1BitTopLevel
+LEDG[0] <= LatchD:inst.dataOut
+SW[0] => LatchD:inst.enable
+SW[1] => LatchD:inst.dataIn
+
+
+|Latch1BitTopLevel|LatchD:inst
+enable => dataOut$latch.LATCH_ENABLE
+dataIn => dataOut$latch.DATAIN
+dataOut <= dataOut$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
