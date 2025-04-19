@@ -1,0 +1,54 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Contador12 is
+    Port (
+        clk     : in std_logic;
+        rst     : in std_logic;
+        LEDR    : out std_logic_vector(3 downto 0);
+        HEX0    : out std_logic_vector(6 downto 0);
+        HEX1    : out std_logic_vector(6 downto 0)
+    );
+end Contador12;
+
+architecture Behavioral of Contador12 is
+    signal count : std_logic_vector(3 downto 0) := "0000";
+    signal tens  : std_logic_vector(3 downto 0) := "0000";
+    signal ones  : std_logic_vector(3 downto 0) := "0000";
+    
+    component Bin7SegDecoder
+        Port (
+            binInput : in std_logic_vector(3 downto 0);
+            enable   : in std_logic;
+            decOut_n : out std_logic_vector(6 downto 0)
+        );
+    end component;
+    
+begin
+    process(clk, rst)
+    begin
+        if rst = '1' then
+            count <= "0000";
+        elsif rising_edge(clk) then
+            if count = "1100" then  -- 12 em binário
+                count <= "0000";
+            else
+                count <= count + 1;
+            end if;
+        end if;
+    end process;
+    
+    -- Separar dígitos das unidades e dezenas
+    tens <= "0001" when count > "1001" else "0000";  -- Se maior que 9, tens = 1
+    ones <= count when count <= "1001" else count - "1010";
+    
+    -- Conectar LEDR aos 4 bits do contador
+    LEDR <= count;
+    
+    -- Instanciar decodificadores para os displays de 7 segmentos
+    HEX0_Decoder: Bin7SegDecoder port map(ones, '1', HEX0);
+    HEX1_Decoder: Bin7SegDecoder port map(tens, '1', HEX1);
+    
+end Behavioral;

@@ -1,0 +1,62 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity Main is 
+	port (CLOK_50 : in std_logic;
+			SW(0) : in std_logic;
+			SW(17) : in std_logic
+			HEX0		: out std_logic_vector(6 downto 0);
+		   HEX1		: out std_logic_vector(6 downto 0));
+end Main;
+
+architecture WorkFlow if Main is 
+	signal menable , mreset , clk1Hz , counter_output , m_enable_g std_logic;
+	signal desenas_BCD , unidades_BCD std_logic_vector(3 downto 0) := "0000";
+begin
+	mreset <= SW(0) -- reset de tudo ac a sw0 
+	menable <= SW(17) -- enable geral 
+	
+	
+	Counter : entity work.Count1_12(Behavioral) -- counter ig , completo 
+				 port map(enable => menbale , 
+                      reset  => mreset  ,
+                      clk	  => CLOCK_50,
+                      output => counter_output);
+							 
+	div1hz : entity work.FreqDivSatic(Behavioral) -- divisor para 1 s , inc
+							generic map(N			=> 5000000)
+							port map(clkIn			=> CLOCK_50,
+										clkOut		=> clk1Hz);
+										
+	div4hz : entity work.FreqDivSatic(Behavioral) -- divisor para 1 s , inc
+							generic map(N			=> 12500000) 
+							port map(clkIn			=> CLOCK_50,
+										clkOut		=> clk4Hz);
+										
+		clk_enb_gen : entity work.ClkEnableGenerator(Behavioral) -- enb gen para os hex, completo 
+							port map(clkIn4Hz		=> clk4Hz,
+										clkEnable	=> m_enable_g,
+										tick4Hz		=> LEDR(8));
+			
+		binto12 : entity work.Bin2BCD(Behavioral)	--conversor , completo 
+							port map (bin   => counter_output, --7to0
+										 tens  => desenas_BCD,    --3to0
+										 ones  => unidades_BCD);  --3to0
+										 
+		
+										
+		hex0unidades : entity work.Count1_12(Behavioral)
+							generic(MAX => 9)
+							port map(reset		=> mreset,
+										clk		=> clk1Hz,
+										enable1	=> m_enable_g,
+										valOut	=> unidades_BCD,
+										termCnt	=> carryout);
+								
+		hex0desenas : entity work.Count1_12(Behavioral)
+							generic(MAX => 2)
+							port map(reset		=> mreset,
+										clk		=> clk1Hz,
+										enable1	=> m_enable_g,
+										valOut	=> unidades_BCD,
+										termCnt	=> carryout);

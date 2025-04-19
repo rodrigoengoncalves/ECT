@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity controlador_leds is
+    Port ( clk : in STD_LOGIC;
+           rst : in STD_LOGIC;
+           count : in INTEGER range 0 to 11;
+           leds : out STD_LOGIC_VECTOR(3 downto 0));
+end controlador_leds;
+
+architecture Behavioral of controlador_leds is
+begin
+    process(clk, rst)
+    begin
+        if rst = '1' then
+            leds <= "0000";
+        elsif rising_edge(clk) then
+            if leds = "1111" then
+                leds <= "0000";
+            else
+                leds <= "1111";
+            end if;
+        end if;
+    end process;
+end Behavioral;

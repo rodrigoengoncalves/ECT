@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity Bin2BCD is
+    port(
+        bin  : in  std_logic_vector(3 downto 0);
+        tens : out std_logic_vector(3 downto 0);
+        ones : out std_logic_vector(3 downto 0)
+    );
+end Bin2BCD;
+
+architecture Behavioral of Bin2BCD is
+    signal s_val : integer range 0 to 255;
+begin
+    process(bin)
+    begin
+        s_val <= to_integer(unsigned(bin));
+        tens <= std_logic_vector(to_unsigned(s_val / 10, 4));
+        ones <= std_logic_vector(to_unsigned(s_val mod 10, 4));
+    end process;
+end Behavioral;

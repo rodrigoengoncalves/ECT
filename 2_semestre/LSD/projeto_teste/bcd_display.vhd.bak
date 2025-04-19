@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity bcd_display is
+    Port ( bcd : in INTEGER range 0 to 11;
+           seg : out STD_LOGIC_VECTOR(6 downto 0));
+end bcd_display;
+
+architecture Behavioral of bcd_display is
+begin
+    process(bcd)
+    begin
+        case bcd is
+            when 0 => seg <= "0111111";
+            when 1 => seg <= "0000110";
+            when 2 => seg <= "1011011";
+            when 3 => seg <= "1001111";
+            when 4 => seg <= "1100110";
+            when 5 => seg <= "1101101";
+            when 6 => seg <= "1111101";
+            when 7 => seg <= "0000111";
+            when 8 => seg <= "1111111";
+            when 9 => seg <= "1101111";
+            when 10 => seg <= "1110111";
+            when 11 => seg <= "1110011";
+            when others => seg <= "0000000";
+        end case;
+    end process;
+end Behavioral;

@@ -1,0 +1,30 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity Count1_12 is 
+	port( enable : in std_logic;
+			reset  : in std_logic;
+			clk	 : in std_logic;
+			output : out std_logic_vector(3 downto 0));
+end Count1_12;
+
+architecture Behavioral of Count1_12 is 
+	signal scount : unsigned(3 downto 0) := "0000";
+
+begin 
+	process(clk,reset,enable)
+	begin
+	  if enable = '1' then
+		if reset = '1' then scount <= "0000";
+		elsif rising_edge(clk) then 
+			if scount = "1011" then scount<= "0000";
+			else scount <= unsigned(scount) + 1 ;
+			end if;
+		end if;
+	  end if;
+	end process;
+	
+	output <= std_logic_vector(scount); 
+end Behavioral;

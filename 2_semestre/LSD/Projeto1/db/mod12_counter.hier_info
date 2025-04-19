@@ -1,0 +1,263 @@
+|Main
+CLOCK_50 => freqdivsatic:div1hz.clkIn
+CLOCK_50 => freqdivsatic:div4hz.clkIn
+LEDG[0] <= <VCC>
+LEDG[1] <= <VCC>
+LEDG[2] <= <VCC>
+LEDG[3] <= <VCC>
+LEDG[4] <= <VCC>
+LEDG[5] <= <VCC>
+LEDG[6] <= <VCC>
+LEDG[7] <= <VCC>
+LEDR[0] <= piscapisca:pisca_ledr.output[0]
+LEDR[1] <= piscapisca:pisca_ledr.output[1]
+LEDR[2] <= piscapisca:pisca_ledr.output[2]
+LEDR[3] <= piscapisca:pisca_ledr.output[3]
+SW[0] => bin7segdecoder:hex0_unidades.enable
+SW[0] => bin7segdecoder:hex1_desenas.enable
+SW[1] => count1_12:Counter.enable
+KEY[0] => count1_12:Counter.reset
+HEX0[0] <= bin7segdecoder:hex0_unidades.decOut_n[0]
+HEX0[1] <= bin7segdecoder:hex0_unidades.decOut_n[1]
+HEX0[2] <= bin7segdecoder:hex0_unidades.decOut_n[2]
+HEX0[3] <= bin7segdecoder:hex0_unidades.decOut_n[3]
+HEX0[4] <= bin7segdecoder:hex0_unidades.decOut_n[4]
+HEX0[5] <= bin7segdecoder:hex0_unidades.decOut_n[5]
+HEX0[6] <= bin7segdecoder:hex0_unidades.decOut_n[6]
+HEX1[0] <= bin7segdecoder:hex1_desenas.decOut_n[0]
+HEX1[1] <= bin7segdecoder:hex1_desenas.decOut_n[1]
+HEX1[2] <= bin7segdecoder:hex1_desenas.decOut_n[2]
+HEX1[3] <= bin7segdecoder:hex1_desenas.decOut_n[3]
+HEX1[4] <= bin7segdecoder:hex1_desenas.decOut_n[4]
+HEX1[5] <= bin7segdecoder:hex1_desenas.decOut_n[5]
+HEX1[6] <= bin7segdecoder:hex1_desenas.decOut_n[6]
+
+
+|Main|Count1_12:Counter
+enable => termCnt_s.OUTPUTSELECT
+enable => scount[3].ENA
+enable => scount[2].ENA
+enable => scount[1].ENA
+enable => scount[0].ENA
+reset => scount[0].ACLR
+reset => scount[1].ACLR
+reset => scount[2].ACLR
+reset => scount[3].ACLR
+reset => termCnt_s.ENA
+clk => termCnt_s.CLK
+clk => scount[0].CLK
+clk => scount[1].CLK
+clk => scount[2].CLK
+clk => scount[3].CLK
+termCnt <= termCnt_s.DB_MAX_OUTPUT_PORT_TYPE
+output[0] <= scount[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= scount[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= scount[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= scount[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|FreqDivSatic:div1hz
+clkIn => s_divCounter[0].CLK
+clkIn => s_divCounter[1].CLK
+clkIn => s_divCounter[2].CLK
+clkIn => s_divCounter[3].CLK
+clkIn => s_divCounter[4].CLK
+clkIn => s_divCounter[5].CLK
+clkIn => s_divCounter[6].CLK
+clkIn => s_divCounter[7].CLK
+clkIn => s_divCounter[8].CLK
+clkIn => s_divCounter[9].CLK
+clkIn => s_divCounter[10].CLK
+clkIn => s_divCounter[11].CLK
+clkIn => s_divCounter[12].CLK
+clkIn => s_divCounter[13].CLK
+clkIn => s_divCounter[14].CLK
+clkIn => s_divCounter[15].CLK
+clkIn => s_divCounter[16].CLK
+clkIn => s_divCounter[17].CLK
+clkIn => s_divCounter[18].CLK
+clkIn => s_divCounter[19].CLK
+clkIn => s_divCounter[20].CLK
+clkIn => s_divCounter[21].CLK
+clkIn => s_divCounter[22].CLK
+clkIn => s_divCounter[23].CLK
+clkIn => s_divCounter[24].CLK
+clkIn => s_divCounter[25].CLK
+clkIn => s_divCounter[26].CLK
+clkIn => s_divCounter[27].CLK
+clkIn => s_divCounter[28].CLK
+clkIn => s_divCounter[29].CLK
+clkIn => s_divCounter[30].CLK
+clkIn => clkOut~reg0.CLK
+clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|FreqDivSatic:div4hz
+clkIn => s_divCounter[0].CLK
+clkIn => s_divCounter[1].CLK
+clkIn => s_divCounter[2].CLK
+clkIn => s_divCounter[3].CLK
+clkIn => s_divCounter[4].CLK
+clkIn => s_divCounter[5].CLK
+clkIn => s_divCounter[6].CLK
+clkIn => s_divCounter[7].CLK
+clkIn => s_divCounter[8].CLK
+clkIn => s_divCounter[9].CLK
+clkIn => s_divCounter[10].CLK
+clkIn => s_divCounter[11].CLK
+clkIn => s_divCounter[12].CLK
+clkIn => s_divCounter[13].CLK
+clkIn => s_divCounter[14].CLK
+clkIn => s_divCounter[15].CLK
+clkIn => s_divCounter[16].CLK
+clkIn => s_divCounter[17].CLK
+clkIn => s_divCounter[18].CLK
+clkIn => s_divCounter[19].CLK
+clkIn => s_divCounter[20].CLK
+clkIn => s_divCounter[21].CLK
+clkIn => s_divCounter[22].CLK
+clkIn => s_divCounter[23].CLK
+clkIn => s_divCounter[24].CLK
+clkIn => s_divCounter[25].CLK
+clkIn => s_divCounter[26].CLK
+clkIn => s_divCounter[27].CLK
+clkIn => s_divCounter[28].CLK
+clkIn => s_divCounter[29].CLK
+clkIn => s_divCounter[30].CLK
+clkIn => clkOut~reg0.CLK
+clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|ClkEnableGenerator:clk_enb_gen
+clkIn4Hz => s_counter[0].CLK
+clkIn4Hz => s_counter[1].CLK
+mode => clkEnable.OUTPUTSELECT
+mode => clkEnable.IN1
+clkEnable <= clkEnable.DB_MAX_OUTPUT_PORT_TYPE
+tick1Hz <= s_counter[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Bin2BCD:binto12
+bin[0] => Div0.IN11
+bin[0] => Mod0.IN15
+bin[1] => Div0.IN10
+bin[1] => Mod0.IN14
+bin[2] => Div0.IN9
+bin[2] => Mod0.IN13
+bin[3] => Div0.IN8
+bin[3] => Mod0.IN12
+tens[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+ones[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|piscapisca:pisca_ledr
+clock => output.OUTPUTSELECT
+clock => output.OUTPUTSELECT
+clock => output.OUTPUTSELECT
+clock => output.OUTPUTSELECT
+vetor[0] => output.DATAB
+vetor[1] => output.DATAB
+vetor[2] => output.DATAB
+vetor[3] => output.DATAB
+output[0] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Bin7SegDecoder:hex0_unidades
+binInput[0] => Mux0.IN19
+binInput[0] => Mux1.IN19
+binInput[0] => Mux2.IN19
+binInput[0] => Mux3.IN19
+binInput[0] => Mux4.IN19
+binInput[0] => Mux5.IN19
+binInput[0] => Mux6.IN19
+binInput[1] => Mux0.IN18
+binInput[1] => Mux1.IN18
+binInput[1] => Mux2.IN18
+binInput[1] => Mux3.IN18
+binInput[1] => Mux4.IN18
+binInput[1] => Mux5.IN18
+binInput[1] => Mux6.IN18
+binInput[2] => Mux0.IN17
+binInput[2] => Mux1.IN17
+binInput[2] => Mux2.IN17
+binInput[2] => Mux3.IN17
+binInput[2] => Mux4.IN17
+binInput[2] => Mux5.IN17
+binInput[2] => Mux6.IN17
+binInput[3] => Mux0.IN16
+binInput[3] => Mux1.IN16
+binInput[3] => Mux2.IN16
+binInput[3] => Mux3.IN16
+binInput[3] => Mux4.IN16
+binInput[3] => Mux5.IN16
+binInput[3] => Mux6.IN16
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+decOut_n[0] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[1] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[2] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[3] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[4] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[5] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[6] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Bin7SegDecoder:hex1_desenas
+binInput[0] => Mux0.IN19
+binInput[0] => Mux1.IN19
+binInput[0] => Mux2.IN19
+binInput[0] => Mux3.IN19
+binInput[0] => Mux4.IN19
+binInput[0] => Mux5.IN19
+binInput[0] => Mux6.IN19
+binInput[1] => Mux0.IN18
+binInput[1] => Mux1.IN18
+binInput[1] => Mux2.IN18
+binInput[1] => Mux3.IN18
+binInput[1] => Mux4.IN18
+binInput[1] => Mux5.IN18
+binInput[1] => Mux6.IN18
+binInput[2] => Mux0.IN17
+binInput[2] => Mux1.IN17
+binInput[2] => Mux2.IN17
+binInput[2] => Mux3.IN17
+binInput[2] => Mux4.IN17
+binInput[2] => Mux5.IN17
+binInput[2] => Mux6.IN17
+binInput[3] => Mux0.IN16
+binInput[3] => Mux1.IN16
+binInput[3] => Mux2.IN16
+binInput[3] => Mux3.IN16
+binInput[3] => Mux4.IN16
+binInput[3] => Mux5.IN16
+binInput[3] => Mux6.IN16
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+decOut_n[0] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[1] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[2] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[3] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[4] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[5] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[6] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+
+

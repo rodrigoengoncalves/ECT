@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity top_level is
+    Port ( clk : in STD_LOGIC;
+           rst : in STD_LOGIC;
+           leds : out STD_LOGIC_VECTOR(3 downto 0);
+           seg : out STD_LOGIC_VECTOR(6 downto 0));
+end top_level;
+
+architecture Structural of top_level is
+    signal clk_1Hz, clk_4Hz : STD_LOGIC;
+    signal count : INTEGER range 0 to 11;
+begin
+    U1: entity work.divisor_frequencia port map (clk, rst, clk_1Hz, clk_4Hz);
+    U2: entity work.contador_mod12 port map (clk_1Hz, rst, count);
+    U3: entity work.controlador_leds port map (clk_4Hz, rst, count, leds);
+    U4: entity work.bcd_display port map (count, seg);
+end Structural;

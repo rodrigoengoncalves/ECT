@@ -1,0 +1,11 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity FreqDivStatic is
+	generic(K : positive := 4)
+	port(
+		reset : in std_logic;
+		clkIn : in std_logic;
+		clkOut : out std_logic;
+	);
