@@ -1,0 +1,7 @@
+
+State Machine - |Chronometer|ControlUnit:control_unit|fstate
+Name fstate.LAPVIEW fstate.STOPPED fstate.STARTED fstate.CLEARED 
+fstate.CLEARED 0 0 0 0 
+fstate.STARTED 0 0 1 1 
+fstate.STOPPED 0 1 0 1 
+fstate.LAPVIEW 1 0 0 1 

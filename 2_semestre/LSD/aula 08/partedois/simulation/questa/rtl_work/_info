@@ -1,0 +1,194 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/lsd/guiao8/partedois/simulation/questa
+T_opt
+!s110 1746530158
+ViRa19d:oS1SCU]:1=JYo60
+04 11 8 work drinksfsmtb stimulus 1
+=1-58cdc99c3819-6819ef6d-25a-3af4
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work rtl_work
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Edrinksfsm
+Z1 w1746529788
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 ^oS01<AhH<ZbI@CNcPk2V0
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 Y19K[Kjfb73Y`YfbP9Kf30
+!i122 1
+R0
+Z10 8C:/intelFPGA_lite/lsd/guiao8/partedois/simulation/questa/DrinksMachine.vho
+Z11 FC:/intelFPGA_lite/lsd/guiao8/partedois/simulation/questa/DrinksMachine.vho
+l0
+L80 1
+VJL`@PlfAo0?e>aQ@7m:[;0
+!s100 Si8ZnO_M==^Y:_YnAmTF_1
+Z12 OL;C;2021.2;73
+32
+Z13 !s110 1746530112
+!i10b 1
+Z14 !s108 1746530111.000000
+Z15 !s90 -reportprogress|300|-work|work|C:/intelFPGA_lite/lsd/guiao8/partedois/simulation/questa/DrinksMachine.vho|
+Z16 !s107 C:/intelFPGA_lite/lsd/guiao8/partedois/simulation/questa/DrinksMachine.vho|
+!i113 0
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+Z19 DEx4 work 9 drinksfsm 0 22 JL`@PlfAo0?e>aQ@7m:[;0
+!i122 1
+l154
+L98 525
+VE3j;j@lb7MHiml?zJi4bU0
+!s100 >Yi1nF?W?<0EMaj02fg461
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Abehavioral
+R7
+R8
+DEx4 work 9 drinksfsm 0 22 :0HIX=X`SLhmliN0Z3=e31
+!i122 0
+l17
+L12 68
+VZ[e2?g[2E>NSJLbd]TJ]M1
+!s100 Sef0=]aX94`30^1VV]gVN2
+R12
+31
+!s110 1746530042
+!i10b 1
+!s108 1746530042.000000
+!s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/lsd/guiao8/partedois/DrinksFSM.vhd|
+!s107 C:/intelFPGA_lite/lsd/guiao8/partedois/DrinksFSM.vhd|
+!i113 0
+o-93 -work work
+R18
+FC:/intelFPGA_lite/lsd/guiao8/partedois/DrinksFSM.vhd
+w1746527790
+8C:/intelFPGA_lite/lsd/guiao8/partedois/DrinksFSM.vhd
+Edrinksfsmtb
+Z20 w1746529739
+R7
+R8
+!i122 2
+R0
+Z21 8C:/intelFPGA_lite/lsd/guiao8/partedois/DrinksFSMTb.vhd
+Z22 FC:/intelFPGA_lite/lsd/guiao8/partedois/DrinksFSMTb.vhd
+l0
+L4 1
+VfMH:B4V:M@L80:=hUfm>J3
+!s100 f?JOfM[<TgX4h6gok_j_L3
+R12
+32
+Z23 !s110 1746530134
+!i10b 1
+Z24 !s108 1746530133.000000
+Z25 !s90 -reportprogress|300|-work|work|C:/intelFPGA_lite/lsd/guiao8/partedois/DrinksFSMTb.vhd|
+Z26 !s107 C:/intelFPGA_lite/lsd/guiao8/partedois/DrinksFSMTb.vhd|
+!i113 0
+R17
+R18
+Astimulus
+R2
+R3
+R4
+R5
+R6
+R9
+R19
+R7
+R8
+DEx4 work 11 drinksfsmtb 0 22 fMH:B4V:M@L80:=hUfm>J3
+!i122 2
+l15
+L8 41
+Vmc[m=o^Hf28k`OkA0e>0?2
+!s100 =gSdV7j[]A<V?49ISnkV=2
+R12
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 0
+R17
+R18
+Ehard_block
+R1
+R4
+R2
+R6
+R7
+R8
+R3
+!i122 1
+R0
+R10
+R11
+l0
+L35 1
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+!i122 1
+l65
+L51 20
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18

@@ -1,0 +1,24 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity Drinks is
+	port(KEY	: in  std_logic;
+		  clk		: in  std_logic;
+		  SW	: in  std_logic_vector(1 downto 0);
+		  LEDG	: out std_logic);
+end DrinksFSM;
+
+architecture Structural of Drinks is
+
+begin
+	process(clk)
+	begin
+		
+	drink_i : entity work.DrinksFSM(Behavioral)
+	port map(reset => KEY[0],
+				V => SW[0],
+				C => SW[1],
+				drink => LEDG[0]);
+	
+	end process()
+end Structural;

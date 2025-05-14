@@ -1,0 +1,10 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity DrinksFSM is
+	port(reset	: in  std_logic;
+		  clk		: in  std_logic;
+		  C	: in  std_logic;
+		  V	: in  std_logic;
+		  drink	: out std_logic);
+end ControlUnit;

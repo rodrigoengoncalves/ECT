@@ -1,0 +1,165 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/lsd/guiao8/partedois/simulation/qsim
+T_opt
+!s110 1746528026
+V]fWD7kl7WHh4=XSz;`n0K0
+04 21 14 work drinksfsm_vhd_vec_tst drinksfsm_arch 1
+=1-58cdc99c3819-6819e719-21e-6548
+!s124 OEM10U3 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Edrinksfsm
+Z1 w1746528020
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 ^oS01<AhH<ZbI@CNcPk2V0
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 Y19K[Kjfb73Y`YfbP9Kf30
+!i122 0
+R0
+Z10 8DrinksMachine.vho
+Z11 FDrinksMachine.vho
+l0
+L80 1
+VjE=eoSi>X:R0JCkDmI3U00
+!s100 fM]mCZ6eI9@C`>T19za@80
+Z12 OL;C;2021.2;73
+32
+Z13 !s110 1746528024
+!i10b 1
+Z14 !s108 1746528023.000000
+Z15 !s90 -work|work|DrinksMachine.vho|
+Z16 !s107 DrinksMachine.vho|
+!i113 0
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 9 drinksfsm 0 22 jE=eoSi>X:R0JCkDmI3U00
+!i122 0
+l154
+L98 525
+VE3j;j@lb7MHiml?zJi4bU0
+!s100 >Yi1nF?W?<0EMaj02fg461
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Edrinksfsm_vhd_vec_tst
+Z19 w1746528018
+R7
+R8
+!i122 1
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L32 1
+V]]G?n?X9nZA;638h6OBn70
+!s100 f9hEQ__IV53mL=l[WHA813
+R12
+32
+R13
+!i10b 1
+Z22 !s108 1746528024.000000
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 0
+R17
+R18
+Adrinksfsm_arch
+R7
+R8
+DEx4 work 21 drinksfsm_vhd_vec_tst 0 22 ]]G?n?X9nZA;638h6OBn70
+!i122 1
+l51
+L34 89
+V^UeU^M`zlkiJa]behcVgF0
+!s100 GPJiV^3P1CoPkM<0n[EO[1
+R12
+32
+R13
+!i10b 1
+R22
+R23
+R24
+!i113 0
+R17
+R18
+Ehard_block
+R1
+R4
+R2
+R6
+R7
+R8
+R3
+!i122 0
+R0
+R10
+R11
+l0
+L35 1
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+!i122 0
+l65
+L51 20
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
