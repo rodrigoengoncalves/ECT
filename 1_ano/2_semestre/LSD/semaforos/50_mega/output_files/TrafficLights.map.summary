@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue May 27 13:19:36 2025
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : TrafficLights
+Top-level Entity Name : TrafficLightsTop
+Family : Cyclone IV E
+Total logic elements : 101
+    Total combinational functions : 100
+    Dedicated logic registers : 46
+Total registers : 46
+Total pins : 21
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

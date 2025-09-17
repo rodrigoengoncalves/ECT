@@ -1,0 +1,4 @@
+Contact{id=1, name='Maria Joaquina', phoneNumber=911234567, email='joaquina@ua.pt', birthDate=1985-01-01}
+Contact{id=2, name='João Miguel', phoneNumber=911234568, email='joao@ua.pt', birthDate=1988-01-01}
+Contact{id=1, name='Maria Joaquina', phoneNumber=911234567, email='joaquina@ua.pt', birthDate=1985-01-01}
+Contact{id=2, name='João Miguel', phoneNumber=911234568, email='joao@ua.pt', birthDate=1988-01-01}
