@@ -11,9 +11,9 @@ enter:	.asciiz "\n"
 main: 	li $v0, read_int 	# ler e tornar o $v0 esse vlor int
  	syscall			#trigger de funções
  	move $t0, $v0		#tornar o $t0 no $v0
- 						# valor de x pretendido)
+ 				# valor de x pretendido)
  	li $t2, 8		# $t2 = 8
- 	add $t1,$t0,$t0 	# $t1 = 	$t0 + $t0 = x + x = 2 * x
+ 	add $t1,$t0,$t0 	# $t1 = $t0 + $t0 = x + x = 2 * x
  	sub $t1,$t1,$t2		# $t1 = $t1 + $t2 = y = 2 * x - 8
  	
  	move $a0, $t1		#tornar o $a0 no $t1
