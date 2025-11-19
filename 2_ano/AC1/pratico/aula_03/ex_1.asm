@@ -48,4 +48,4 @@ endfor:
  	syscall
  	 				 	
  	 				 	
- 	jr $ra 
+ 	jr 	$ra 

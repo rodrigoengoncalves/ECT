@@ -1,0 +1,23 @@
+Nov 17 15:00:57.114 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 17 15:00:57.116 HYPERVISOR: Started on IP = localhost, TCP port = 62537.
+Nov 17 15:00:57.605 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 17 15:00:57.606 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rg210\Desktop\ECT\2_ano\RC\pratico\guiao_4\parte_1\raw.png\project-files\dynamips 
+Nov 17 15:00:57.606 GENERAL: working_dir=C:\Users\rg210\Desktop\ECT\2_ano\RC\pratico\guiao_4\parte_1\raw.png\project-files\dynamips
+Nov 17 15:00:57.606 HYPERVISOR: exec_cmd: ethsw create Switch3 
+Nov 17 15:06:07.812 HYPERVISOR: exec_cmd: nio create_udp udp-202ac4e0-7cc3-4f49-a65e-e421a1cb7b5f 20019 127.0.0.1 20018 
+Nov 17 15:06:07.813 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-202ac4e0-7cc3-4f49-a65e-e421a1cb7b5f 
+Nov 17 15:06:07.836 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-202ac4e0-7cc3-4f49-a65e-e421a1cb7b5f 1 
+Nov 17 15:06:13.527 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-202ac4e0-7cc3-4f49-a65e-e421a1cb7b5f 1 
+Nov 17 15:06:23.950 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-202ac4e0-7cc3-4f49-a65e-e421a1cb7b5f 1 
+Nov 17 15:06:29.585 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-202ac4e0-7cc3-4f49-a65e-e421a1cb7b5f 1 
+Nov 17 15:06:38.386 HYPERVISOR: exec_cmd: nio create_udp udp-ea5d467b-f8d0-48a6-a523-0dcc3b778dc7 20022 127.0.0.1 20023 
+Nov 17 15:06:38.387 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-ea5d467b-f8d0-48a6-a523-0dcc3b778dc7 
+Nov 17 15:06:38.389 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-ea5d467b-f8d0-48a6-a523-0dcc3b778dc7 1 
+Nov 17 15:06:45.919 HYPERVISOR: exec_cmd: nio create_udp udp-6f03456c-6dce-4f93-bcd2-c7d7dc92d881 20024 127.0.0.1 20025 
+Nov 17 15:06:45.919 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-6f03456c-6dce-4f93-bcd2-c7d7dc92d881 
+Nov 17 15:06:45.932 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-6f03456c-6dce-4f93-bcd2-c7d7dc92d881 1 
+Nov 17 15:23:01.289 HYPERVISOR: exec_cmd: ethsw remove_nio Switch3 udp-202ac4e0-7cc3-4f49-a65e-e421a1cb7b5f 
+Nov 17 15:23:01.317 HYPERVISOR: exec_cmd: nio delete udp-202ac4e0-7cc3-4f49-a65e-e421a1cb7b5f 
+Nov 17 15:23:34.897 HYPERVISOR: exec_cmd: nio create_udp udp-41eb4285-8e75-4e26-adc4-e30ac4516be9 20019 127.0.0.1 20018 
+Nov 17 15:23:34.898 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-41eb4285-8e75-4e26-adc4-e30ac4516be9 
+Nov 17 15:23:34.925 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-41eb4285-8e75-4e26-adc4-e30ac4516be9 1 
