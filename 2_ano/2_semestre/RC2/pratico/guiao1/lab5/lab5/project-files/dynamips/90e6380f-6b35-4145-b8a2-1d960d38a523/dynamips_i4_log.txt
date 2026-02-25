@@ -1,0 +1,53 @@
+Feb 19 14:11:03.273 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 19 14:11:03.273 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 64810.
+Feb 19 14:11:03.768 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 19 14:11:03.768 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rg210\Documents\GitHub\ECT\2_ano\2_semestre\RC2\pratico\guiao1\lab1\project-files\dynamips 
+Feb 19 14:11:03.768 GENERAL: working_dir=C:\Users\rg210\Documents\GitHub\ECT\2_ano\2_semestre\RC2\pratico\guiao1\lab1\project-files\dynamips
+Feb 19 14:11:03.768 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rg210\Documents\GitHub\ECT\2_ano\2_semestre\RC2\pratico\guiao1\lab1\project-files\dynamips\1da99675-6d22-4bd8-bc3d-c01934345057 
+Feb 19 14:11:03.800 GENERAL: working_dir=C:\Users\rg210\Documents\GitHub\ECT\2_ano\2_semestre\RC2\pratico\guiao1\lab1\project-files\dynamips\1da99675-6d22-4bd8-bc3d-c01934345057
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Feb 19 14:11:03.813 VM: VM R3 created.
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5009 
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x601712a8 
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/rg210/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca03.00a4.0000 
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Feb 19 14:11:03.813 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Feb 19 14:11:03.829 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 19 14:11:03.829 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Feb 19 14:11:03.829 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 19 14:11:03.829 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+Feb 19 14:11:03.829 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 19 14:11:03.829 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+Feb 19 14:11:07.785 HYPERVISOR: exec_cmd: nio create_udp udp-878b1863-82bc-4e34-8731-3a1a9c683b50 10010 127.0.0.1 10011 
+Feb 19 14:11:08.070 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-878b1863-82bc-4e34-8731-3a1a9c683b50 
+Feb 19 14:11:08.070 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 19 14:11:08.117 HYPERVISOR: exec_cmd: nio create_udp udp-e45bcb87-72c6-43e4-8856-416d41c843a0 10014 127.0.0.1 10015 
+Feb 19 14:11:08.123 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-e45bcb87-72c6-43e4-8856-416d41c843a0 
+Feb 19 14:11:08.123 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 19 14:11:09.109 HYPERVISOR: exec_cmd: nio create_udp udp-ab381836-70b2-46eb-8b8e-d0785c4a48e5 10026 127.0.0.1 10027 
+Feb 19 14:11:09.109 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-ab381836-70b2-46eb-8b8e-d0785c4a48e5 
+Feb 19 14:11:09.109 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 19 14:12:16.311 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Feb 19 14:12:16.313 HYPERVISOR: exec_cmd: vm set_ghost_file R3 C:\Users\rg210\Documents\GitHub\ECT\2_ano\2_semestre\RC2\pratico\guiao1\lab1\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Feb 19 14:12:16.313 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 19 14:12:16.315 HYPERVISOR: exec_cmd: vm set_config R3 configs\i3_startup-config.cfg configs\i3_private-config.cfg 
+Feb 19 14:12:16.315 HYPERVISOR: exec_cmd: vm start R3 
+Feb 19 14:12:46.747 HYPERVISOR: exec_cmd: vm extract_config R3 
+Feb 19 14:45:15.426 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 19 14:45:15.431 HYPERVISOR: exec_cmd: vm stop R3 
+Feb 19 14:45:15.679 VM: VM R3 shutdown.
+Feb 19 14:45:15.681 HYPERVISOR: exec_cmd: vm extract_config R3 
+Feb 19 14:45:17.057 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 19 14:45:17.059 HYPERVISOR: exec_cmd: vm extract_config R3 
+Feb 19 14:45:17.063 HYPERVISOR: exec_cmd: vm delete R3 
+Feb 19 14:45:17.063 VM: VM R3 destroyed.
+Feb 19 14:45:17.063 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 19 14:45:17.361 HYPERVISOR: Stopped.
+Feb 19 14:45:17.361 GENERAL: reset done.
