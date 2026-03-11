@@ -1,0 +1,6 @@
+cygwin warning:
+  MS-DOS style path detected: C:\Users\rg210\Documents\GitHub\ECT\2_ano\2_semestre\RC2\pratico\guiao2\lab1\lab1\project-files\dynamips
+  Preferred POSIX equivalent is: /cygdrive/c/Users/rg210/Documents/GitHub/ECT/2_ano/2_semestre/RC2/pratico/guiao2/lab1/lab1/project-files/dynamips
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
